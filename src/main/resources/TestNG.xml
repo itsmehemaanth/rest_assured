@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Automation" >
+    <listeners>
+        <listener class-name="api.listeners.TestStatusListener"/>
+        <listener class-name="api.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name = "Basic Tests" parallel = "methods" thread-count = "2">
+        <classes>
+            <class name="api.businessLogics.LoginTest"/>
+        </classes>
+    </test>
+</suite>
